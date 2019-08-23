@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 puts "Please enter your name"
@@ -8,5 +7,7 @@ puts "Hello #{name}! Think you can win???"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Please enter a position"
 user_input = gets.strip
+input_to_index(user_input)
+
 
 # Code your CLI Here
