@@ -1,3 +1,5 @@
+board = [" "," "," "," "," "," "," "," "," "]
+
 def display_board(board) #board is the argument that this method will return - board is already a predefined array that it is referencing
   puts " #{board[0]} | #{board[1]} | #{board[2]} " #this creates the first line of our TTT board
   puts "-----------"                               #this creates the second line of our TTT board
@@ -7,10 +9,15 @@ def display_board(board) #board is the argument that this method will return - b
 end
 
 def input_to_index(input)
-  player_move=input.to_i-1
+  index=input.to_i-1
 end
 
-def move(board, index, "X")
+def move(array, index, value="X")
 
+# board = [" "," "," "," "," "," "," "," "," "]
+  def update_array_at_with(array, index, value="X") #method to take input and update our board array#
+    array[index] = value
+  end
+  update_array_at_with(board,index,value)
 end
 # code your input_to_index and move method here!
