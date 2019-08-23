@@ -9,6 +9,6 @@ display_board( board)
 puts "Please enter a position"
 user_input = gets.strip
 index = input_to_index( user_input)
-
+move(board, index)
 
 # Code your CLI Here
