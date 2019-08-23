@@ -8,13 +8,11 @@ def display_board(board) #board is the argument that this method will return - b
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(input)
-  index=input.to_i-1
+def input_to_index(user_input)
+  index=user_input.to_i-1
 end
 
 def move(board, index, value = "X")
-
-# board = [" "," "," "," "," "," "," "," "," "]
   def update_array_at_with(array, index, value = "X") #method to take input and update our board array#
     array[index] = value
   end
