@@ -5,6 +5,7 @@ puts "Please enter your name"
 name = gets.strip
 puts "Hello #{name}! Think you can win???"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+display_board(board)
 puts "Please enter a position"
 user_input = gets.strip
 input_to_index(user_input)
