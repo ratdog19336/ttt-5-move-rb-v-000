@@ -6,6 +6,7 @@ puts "Please enter your name"
 name = gets.strip
 puts "Hello #{name}! Think you can win???"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Please enter a position"
 user_input = gets.strip
 
 # Code your CLI Here
